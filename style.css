@@ -1,0 +1,19 @@
+* .today {
+  background-color: #353ebb !important;
+  color: #fff;
+}
+
+.calendar-container {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.card {
+  margin-top: 40px;
+}
+
+h6 {
+  color: white;
+}

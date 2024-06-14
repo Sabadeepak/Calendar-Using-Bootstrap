@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="card">
+
+        <div class="card-body">
+
+          <div class="row mt-3 text-center d-flex justify-content-between mb-2 ">
+
+            <button onclick="prevMonth()" class="btn  ml-3">&lt; </button>
+
+            <div class="col-md-3">
+              <select id="yearDropdown" class="form-control custom-select" onchange="generateCalendar()"></select>
+            </div>
+
+            <div class="col-md-6">
+              <select id="monthDropdown" class="form-control custom-select" onchange="generateCalendar()"></select>
+            </div>
+
+            <button onclick="nextMonth()" class="btn mr-3"> &gt;</button>
+
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div id="calendar-container" class="calendar-container"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
